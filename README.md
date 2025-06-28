@@ -49,7 +49,7 @@
 
 ## Overview
 
-Streamlit-based application that enables you to ask questions about documents and receive answers based on the content of those documents. It uses a Hybrib Retrieval-Augmented Generation (RAG) to find relevant information within the document and generate accurate, context-aware responses.
+Streamlit-based application that enables you to ask questions about documents and receive answers based on the content of those documents. It uses Hybrib Retrieval-Augmented Generation (RAG) approach to find relevant information within the document and generate accurate, context-aware responses.
 
 **Key Features:**
 
