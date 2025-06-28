@@ -1,0 +1,39 @@
+[project]
+name = "document-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "colorlog>=6.9.0",
+    "docling>=2.22.0",
+    "lancedb>=0.19.0",
+    "openai>=1.63.0",
+    "pydantic>=2.10.6",
+    "python-dotenv>=1.0.1",
+    "pyyaml==6.0.2",
+    "requests>=2.32.3",
+    "streamlit>=1.42.0",
+    "tiktoken>=0.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "pyright>=1.1.393",
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+ignore = ["F401"]  # ✅ Ignore unused imports
+
+[tool.pyright]
+exclude = [".venv", ".history"]  # ✅ Add .history to excluded folders
+pythonVersion = "3.13"
+venvPath = "."
+venv = ".venv"
